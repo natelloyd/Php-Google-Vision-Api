@@ -24,7 +24,7 @@ class Word
      * @param BoundingPoly $boundingBox
      * @param Symbol[] $symbols
      */
-    public function __construct(TextProperty $property, BoundingPoly $boundingBox, array $symbols)
+    public function __construct(TextProperty $property = null, BoundingPoly $boundingBox, array $symbols)
     {
         $this->property = $property;
         $this->boundingBox = $boundingBox;

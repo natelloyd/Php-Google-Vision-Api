@@ -49,7 +49,7 @@ class PagesStrategy implements StrategyInterface
 
         foreach ($value as $pageEntityInfo) {
             $pageEntities[] = new Page(
-                $this->textPropertyStrategy->hydrate($pageEntityInfo['property']),
+                $this->textPropertyStrategy->hydrate($pageEntityInfo['property'] ?? ''),
                 $pageEntityInfo['width'],
                 $pageEntityInfo['height'],
                 $this->blocksStrategy->hydrate($pageEntityInfo['blocks'])

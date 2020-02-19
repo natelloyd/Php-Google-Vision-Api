@@ -41,7 +41,7 @@ class DominantColorsStrategy implements StrategyInterface
             $dominantColor = new DominantColor();
 
             $colorArray = $colorInfo['color'];
-            $color = new Color($colorArray['red'], $colorArray['green'], $colorArray['blue']);
+            $color = new Color($colorArray['red'] ?? 0, $colorArray['green'] ?? 0, $colorArray['blue'] ?? 0);
 
             $dominantColor->setColor($color);
             $dominantColor->setPixelFraction($colorInfo['pixelFraction']);
