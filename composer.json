@@ -1,5 +1,5 @@
 {
-    "name": "jordikroon/google-vision",
+    "name": "natelloyd/google-vision",
     "description": "Google Vision Api for PHP (https://cloud.google.com/vision/)",
     "keywords": ["Google","Cloud", "Vision", "Api", "Image", "Face", "Recognition", "Landmark"],
     "license": "MIT",
