@@ -38,9 +38,9 @@ class LandmarkStrategy implements StrategyInterface
             $position = $landmarkInfo['position'];
 
             $landmark = new Landmark();
-            $landmark->setType($landmarkInfo['type']);
+            $landmark->setType($landmarkInfo['type'] ?? 'unknown');
             $landmark->setPosition(
-                new Position($position['x'], $position['y'], $position['z'])
+                new Position($position['x'] ?? 0, $position['y'] ?? 0, $position['z'] ?? 0)
             );
 
             $landmarks[] = $landmark;
